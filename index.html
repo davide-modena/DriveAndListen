@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drive & Listen</title>
+    <link rel="shortcut icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/SSC_Neapel.svg/1200px-SSC_Neapel.svg.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- <script src="js/videoplaycontrols.js" defer></script> -->
+    <script src="https://www.youtube.com/iframe_api" defer></script>
+    <script src="js/audioplayer.js" defer></script>
+    <script src="js/skipVideo.js" defer></script>
+    <script src="js/videoSpeed.js" defer></script>
+</head>
+<body>
+    <div class="video-container">
+        <iframe id="player" src="https://www.youtube.com/embed/IHXZnU2bmc8?start=3038&autoplay=1&rel=0&mute=1&playsinline=1&controls=0&enablejsapi=1"></iframe>
+    </div>
+
+    <!-- <img src="https://www.telegraph.co.uk/content/dam/Travel/Destinations/Europe/Italy/naples-lead-GettyImages-1327485657.jpg" alt=""> -->
+
+    <div class="menu-container blur">
+        <div class="title centered">
+            <h1>Drive & Listen</h1>
+        </div>
+        <div class="radio centered">
+            <audio id="playAudio" preload='none' loop>
+                <source src="audios/tarantelladipiero.mp3">
+            </audio>
+
+            <div class="container">
+                <div class="row">
+                    <div class="col centered">
+                        <h1 id="cityName">Napoli</h1>
+                    </div>
+                </div>
+
+                <div class="row-auto controls centered">
+                    <div class="col centered">
+                        <i id="prevButton" class="bi bi-skip-start-fill"></i>
+                    </div>
+                    <div class="col centered">
+                        <i id="playButton" class="bi bi-play-fill"></i>
+                    </div>
+                    <div class="col centered">
+                        <i id="skipButton" class="bi bi-skip-end-fill"></i>
+                    </div>
+                </div>
+
+                <div class="row centered">
+                    <div id="nSpeed" class="col-2 centered speed-button">
+                        1x
+                    </div>
+                    <div id="nhSpeed" class="col-2 centered speed-button">
+                        1.5x
+                    </div>
+                    <div id="dSpeed" class="col-2 centered speed-button">
+                        2x
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="credits">
+            <p>Davide Modena. @All Rights Reserved.</p>
+        </div>
+    </div>
+</body>
+</html>
