@@ -60,7 +60,7 @@ const videoData = [
     { id: "chN57VftAao", name: "Trento", audio: "https://www.radiodolomiti.com:10068/;stream.mp3", start: 340},
     { id: "Ht_OQfAUbRI", name: "Torino", audio: "http://stream12.top-ix.org/radiotorino", start: 118},
     { id: "Qkc5Xxy4L2g", name: "Palermo", audio: "https://onair15.xdevel.com/proxy/rgs?mp=/;", start: 335},
-    { id: "ztVV54sPOns", name: "Space", audio: spaceAudios, start: 0},
+    { id: "ztVV54sPOns", name: "ghay", audio: spaceAudios, start: 0},
 ];
 
 const playerIframe = document.getElementById("player");
